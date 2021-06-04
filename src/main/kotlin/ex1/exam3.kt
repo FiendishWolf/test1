@@ -8,3 +8,5 @@ fun main() {
 class Kick(val a: String = listOf<String>("This", "is", "Sparta", "!!!").toString())
 
 fun Kick.upgrade() = this.a.toUpperCase()
+
+// 히히시벌
