@@ -31,4 +31,18 @@ class School {
         println("Student: $studentList")
         println("Teacher: $teacherList")
     }
+
+    companion object {
+
+        fun makeNewSchool() = School().apply {
+            this.addPerson(Person("Swann", 40, SchoolRole.TEACHER))
+            this.addPerson(
+                Person("James", 18, examSubject = ExamSubject(0, 0, 0)),
+                Person("Matthew", 18, SchoolRole.STUDENT, ExamSubject(100,100,100)),
+                Person("Tychus", 18),
+                Person("Arcturus", 18),
+                Person("Artanis", 18)
+            )
+        }
+    }
 }
